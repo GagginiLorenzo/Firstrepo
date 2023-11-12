@@ -1,7 +1,9 @@
 ---
 jupyter: python3
 ---
-
+```{ojs}
+x = Inputs.text({placeholder: "Say hello"})
+y = Inputs.text({placeholder: "Say hello"})
 ```{python}
 #MODULE qui communique à l'API EXPLORE de synop pour récupéré les données souhaité donnée par l'utilisateur
 #input :récupéré par un saisie écrite pour le moment, facilement modifiable
@@ -21,8 +23,8 @@ url="https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/donnees-s
 ```{python}
 class HTTPSrequest_fetch :
     def __init__(self):
-        self.selection=input("selection")
-        self.condition=input("condition")
+        self.selection=x
+        self.condition=y
         self.url=url+'select='+self.selection+'&where='+self.condition+'&limit=5'+'&refine=nom_reg:'"Occitanie"''
     def get_data(self):
         with urllib.request.urlopen(self.url) as response:
@@ -49,5 +51,5 @@ instance=HTTPSrequest_fetch()
 ```{python}
 fetch.get_data()
 ```
-
+```
 
