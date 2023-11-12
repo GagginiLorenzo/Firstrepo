@@ -1,7 +1,7 @@
 project:
   type: website
   render:
-    - Untitled.qmd
+    - Untitled.ipynb
 
 website:
   title: "Firstrepo"
