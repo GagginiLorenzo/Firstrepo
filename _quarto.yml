@@ -1,0 +1,22 @@
+project:
+  type: website
+
+filters:
+  - shinylive
+
+website:
+  title: "Firstrepo/"
+  navbar:
+    left:
+      - href: Untitled.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
