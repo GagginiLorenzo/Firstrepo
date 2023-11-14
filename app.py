@@ -3,12 +3,8 @@ import pyodide.http
 from shiny import App, reactive, render, ui
 
 app_ui = ui.page_fluid(
-    ui.input_selectize(
-        "selection",
-        "choisir selection",
-        [
-            "pres","nom"
-        ],
+    ui.input_text(
+        "selection","selection", placeholder="critère de selection"
     ),
     ui.output_text_verbatim("info"),
 )
