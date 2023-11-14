@@ -40,7 +40,12 @@ jobs:
       - name: Build page with Quarto
         run: |
           quarto render --output-dir _build
-
+          
+      - uses: actions/checkout@master
+      - name: copy app.py in _Build dir
+        run: |
+          cp app.py _build
+          
       - name: Create shinylive site
         run: shinylive export _build _site
 
