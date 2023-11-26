@@ -1,6 +1,6 @@
 ---
-title: "Firstrepo"
-format: dashboard
+title: "group5project"
+format: website
 ---
 
 ```{shinylive-python}

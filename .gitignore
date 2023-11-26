@@ -1,4 +1,7 @@
 .shynenv
-**/_extension/
-
+**/_extensions/
+app.ipynb
 /.quarto/
+**/_build/
+_quarto.yml
+**/_site/
