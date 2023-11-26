@@ -1,6 +1,6 @@
 ---
 title: "group5project"
-format: website
+type : website
 ---
 
 ```{shinylive-python}
