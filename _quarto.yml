@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - /q.qmd
+
+website:
+  title: "Groupe_5_project"
+  navbar:
+    search: true
+    right:
+      - icon: github
+        href: https://github.com/GagginiLorenzo/HAX712X_group5_project
+
+format:
+  html:
+    toc: true
